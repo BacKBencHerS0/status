@@ -3,10 +3,7 @@ import discord, os , alive , asyncio , datetime ,pytz
 
 from discord.ext import tasks, commands
 
-client = commands.Bot(
-  command_prefix='!',
-  self_bot=True
-)
+client = commands.Bot(intents=discord.Intents.all() , command_prefix= "!" , description='test')
 
 
 
